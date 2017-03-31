@@ -1,0 +1,147 @@
+/* ----------- POPULAR PLUGIN FIXES ----------*/
+/*
+----------- Scrum For Trello List Numbers fix ----------*/
+
+.list-total {
+  margin-top: 0px !important;
+  margin-right: 4px;
+  margin-bottom: -12px;
+  height: 18px;
+}
+.is-subscribe-shown .list-total {
+  margin-right: -48px;
+}
+.board-header-btns .list-total {
+  margin-top: 0;
+  margin-left: 5px;
+}
+.window-header .picker {
+  margin-top: 15px;
+}
+/*
+----------- Card Colors for Trello fix ----------*/
+
+.badges {
+  padding: 2px 0 0 !important;
+}
+/*
+----------- Card Counter for Trello fix ----------*/
+
+.cardCounter {
+  float: right;
+  background: RGBA(0, 121, 191, 0.3);
+  padding: 1px 4px 0;
+  margin: 1px 7px 0;
+}
+.board-header-btn.total-cards {
+  background: none;
+  border: none;
+}
+/*
+----------- Agile Scrum for Trello fix ----------*/
+
+.scrum-list-total {
+  top: 4px;
+  background: none;
+  position: relative;
+  right: 0;
+  text-align: right;
+  margin-right: 9px;
+  margin-bottom: -7px;
+}
+.scrum-list-progress {
+  background-color: rgba(0, 0, 0, .15) !important;
+}
+.scrum-card-progress {
+  background-color: rgba(0, 0, 0, .25) !important;
+}
+.list-card.scrum-card-header {
+  box-shadow: none;
+}
+.list-card.scrum-card-header .list-card-title {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+.list-card.scrum-card-header .scrum-card-points {
+  display: none;
+}
+.badge.project {
+  border-radius: 3px;
+  padding: 3px 4px 0px !important;
+}
+/*
+----------- Next Step for Trello fix ----------*/
+
+.aj-next-step {
+  background-color: rgba(255, 255, 255, 0.701961);
+  padding: 6px 8px;
+  padding-left: 27px;
+  border-radius: 3px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-weight: 400;
+}
+.aj-next-step > .aj-checkbox {
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+  border: 1px solid #D6DADC;
+  border-bottom-color: #C4C9CC;
+  font-weight: 700;
+  position: absolute;
+  left: 4px;
+  line-height: 18px;
+  overflow: hidden;
+  text-align: center;
+  text-indent: 100%;
+  top: -1px;
+  height: 15px;
+  width: 15px;
+  white-space: nowrap;
+  margin-top: 5px;
+}
+.aj-checkbox-tick {
+  visibility: hidden;
+  color: #61bd4f;
+  font-family: trellicons;
+  font-style: normal;
+  font-weight: 400;
+}
+.aj-next-step > .aj-checkbox-tick:hover {
+  opacity: 1;
+}
+.aj-checkbox-tick:after {
+  visibility: visible;
+  background-color: #F8F9F9;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  text-indent: 0;
+  position: absolute;
+  content: "\e910";
+  display: block;
+  top: 7px;
+  left: 2px;
+}
+.aj-next-step.aj-checked {
+  padding: 0;
+}
+#aj-nextstep-btn .board-header-btn-text {
+  padding-left: 8px;
+}
+#aj-nextstep-btn {
+  padding-right: 8px;
+}
+#aj-nextstep-btn:before {
+  content: "↑↓";
+  display: inline-block;
+  left: 0;
+  top: -1px;
+  position: relative;
+}
+.aj-nextstep-icon {
+  display: none;
+}
+#aj-nextstep-modes .sub-name {
+  display: none;
+}

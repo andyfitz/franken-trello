@@ -1,0 +1,104 @@
+/*
+======= You have Version 1.1.4 of Modernized Trello Installed =======*/
+/*
+————— YOUR CUSTOM OPTIONS —————*/
+/*
+----------- Backgrounds - Set to Don't Override ----------*/
+
+.body-board-view #header {
+  background: rgba(0,0,0,.15) !important;
+}
+.body-dark-board-background .board-header{
+  background: RGBA(0, 0, 0, 0.40) !important;
+}
+.body-board-view.body-custom-board-background #header {
+  background: RGBA(30,130,193,0.90) !important;
+}
+.body-light-board-background .board-header{
+  background: RGBA(255, 255, 255, 0.40) !important;
+}
+.body-light-board-background .board-header .board-header-btn-text,
+.body-light-board-background .board-header .board-header-btn-icon{
+  font-weight: 400;
+  color: #2C355A !important;
+}
+.body-light-board-background .list {
+  border: 1px RGBA(30,130,193,0.10) solid;
+}
+/*
+----------- Board Activity Indicator - Set to Hide ----------*/
+
+.compact-board-tile-link-options-unread,
+.board-tile-options-unread-indicator {
+  display: none;
+}
+/*
+----------- Unhelpful Card Activity - Set to Show All Activity ----------*/
+
+/*
+————— Card Cover Images - Set to Show All Card Covers  —————*/
+/*
+————— Profile Name in Header - Set to Hide —————*/
+
+.header-btn-text.js-member-name {
+  display: none;
+}
+.header-member .member {
+  border-radius: 3px !important;
+}
+/*
+————— Info Button in Header - Set to Hide —————*/
+
+.header-btn.js-open-header-info-menu {
+  display: none;
+}
+/*
+————— Collapse Sections on Profile > Cards Page - Set to Collapse —————*/
+
+.js-cards-content .window-module-title h3:after {
+	content: "expand";
+	display: inline-block;
+	text-align: right;
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-left: 14px;
+	font-size: 10px !important;
+	color: #61bd4f;
+	transition: all 0s 9999999s;
+}
+.js-cards-content .window-module-title {
+	transition: all 0s 9999999s;
+	border-bottom: 1px solid #EDEFF0;
+}
+.js-cards-content .window-module-title:hover {
+	border-bottom: 1px solid grey;
+}
+.js-cards-content .window-module:active .window-module-title {
+	transition: all 0s;
+	border-bottom: 0 !important;
+}
+.js-cards-content .card-grid {
+	transition: all 0s 9999999s;
+	height: 0;
+	overflow-y: hidden;
+}
+.js-cards-content .window-module:active .window-module-title ~ .card-grid {
+	transition: all 0s;
+	height: 100%;
+}
+.js-cards-content .window-module:active h3:after {
+	color: rgba(0, 0, 0, 0);
+	transition: all 0s;
+}
+@media only screen and (max-width: 859px) {
+	.js-cards-content .window-module-title {
+		padding-right: 20px;
+	}
+	.js-cards-content .window-module-title h3:after {
+		content: "\25BC";
+		color: #D5D9DB !important;
+	}
+}

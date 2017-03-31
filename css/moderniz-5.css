@@ -1,0 +1,171 @@
+/* ----------- OTHER PAGE FIXES ----------*/
+/*
+----------- Pinned Board Other Page Fixes ----------*/
+
+.body-pinned-drawer .member-boards-view,
+.body-pinned-drawer .tabbed-pane-header-wrapper {
+  padding-left: 330px;
+  padding-right: 30px;
+}
+@media only screen and (max-width: 680px) {
+  .tabbed-pane-header-details {
+    margin-left: 45px;
+  }
+  .profile-image,
+  .profile-image-image {
+    height: 40px;
+    width: 40px;
+  }
+  .profile-image-image {
+    background-size: 40px 40px;
+  }
+  .tabbed-pane-header-wrapper {
+    padding: 1pc;
+  }
+  .body-pinned-drawer .tabbed-pane-header-wrapper {
+    padding-left: 300px;
+    padding-right: 20px;
+  }
+}
+.body-pinned-drawer .tabbed-pane-main-col-wrapper {
+  padding-left: 300px;
+  padding-right: 20px;
+}
+.body-pinned-drawer .tabbed-pane-nav {
+  padding-left: 280px;
+}
+@media only screen and (max-width: 750px) {
+  .member-boards-view {
+    padding: 20px !important;
+  }
+  .body-pinned-drawer .member-boards-view {
+    padding-left: 330px !important;
+    padding-right: 30px !important;
+  }
+}
+@media only screen and (max-width: 1230px) and (min-width: 1020px) {
+  .body-pinned-drawer .boards-page-board-section-list-item {
+    width: 33% !important;
+  }
+}
+@media only screen and (max-width: 1019px) and (min-width: 796px) {
+  .body-pinned-drawer .boards-page-board-section-list-item {
+    width: 50% !important;
+  }
+}
+@media only screen and (max-width: 795px) and (min-width: 30px) {
+  .body-pinned-drawer .boards-page-board-section-list-item {
+    width: 100% !important;
+  }
+}
+/*
+----------- Search Results Page ----------*/
+
+.body-pinned-drawer.body-search-page .content {
+  padding-left: 293px;
+}
+/*
+----------- Trello > Boards Page ----------*/
+
+.board-tile-details-name {
+  font-weight: 300;
+}
+.member-boards-view {
+  padding: 20px 20px 20px 46px;
+}
+/*
+----------- Profile > Activity Page ----------*/
+
+.body-tabbed-page .attachment-image-preview {
+  max-width: 100%;
+}
+.list-actions:before,
+.js-list-actions:before,
+.js-menu-action-list:before {
+  background-color: RGBA(255, 255, 255, 0) !important;
+  height: calc(100% - 125px);
+}
+/*
+----------- Profile > Cards Page ----------*/
+
+.archive-list li,
+.org-list li,
+.segmented-control,
+.window-module-title {
+  border-bottom: none;
+}
+.card-grid-container {
+  padding: 0 14px 14px 0;
+}
+.card-grid-container .list-card {
+  max-width: 100%;
+}
+.card-grid-container .list-card-cover.js-card-cover {
+  background-color: #F0F3F4 !important;
+}
+@media only screen and (max-width: 1070px) and (min-width: 860px) {
+  .card-grid-container {
+    width: 50% !important;
+  }
+  .card-grid-container:nth-child(3n+1) {
+    clear: none;
+  }
+  .card-grid-container:nth-child(2n+1) {
+    clear: left;
+  }
+}
+@media only screen and (max-width: 859px) {
+  .card-grid-container {
+    width: 100% !important;
+  }
+}
+/*
+----------- Company > Boards Page ----------*/
+
+@media only screen and (max-width: 1520px) and (min-width: 901px) {
+  .body-pinned-drawer .boards-page-layout {
+    display: block;
+  }
+}
+.board-tile.mod-add {
+  width: 700px;
+}
+.boards-page-navigation-list-item-link.mod-quiet {
+  text-decoration: none;
+}
+.tabbed-pane-header-details-content a:hover {
+  text-decoration: underline;
+}
+.boards-page-board-section-header-options-item-name {
+  text-decoration: none !important;
+}
+/*
+----------- Company > Members Page ----------*/
+
+@media only screen and (max-width: 1000px) {
+  .body-pinned-drawer .org-members-page-layout {
+    display: block;
+  }
+  .org-members-options {
+    max-width: 400px;
+    width: 100%;
+  }
+  .org-members-options input {
+    width: 100%;
+  }
+}
+.member-list-item-detail .options .option.button-link.remove-button {
+  min-width: 90px;
+}
+/*
+----------- Company > Settings Page ----------*/
+
+.setting-item-action .button-link.u-text-align-center {
+  min-width: 90px;
+}
+/*
+----------- Trello Blog Footer Fix ----------*/
+
+.blog footer a {
+  text-decoration: none;
+}

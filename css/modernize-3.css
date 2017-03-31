@@ -1,0 +1,562 @@
+/* ----------- BOARD-SPECIFIC STYLES ----------*/
+
+.board-canvas {
+  margin-top: -53px;
+  z-index: 3;
+}
+.body-board-view #content {
+  overflow-y: visible;
+}
+#board::-webkit-scrollbar,
+.u-fancy-scrollbar::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+.u-fancy-scrollbar::-webkit-scrollbar-track-piece {
+  background: none;
+}
+#contact-us {
+  position: relative !important;
+  margin: 100px auto !important;
+  text-align: center !important;
+  color: #000 !important;
+  display: block !important;
+  -webkit-animation: 3s ease-in contact-fadein;
+  animation: 3s ease-in contact-fadein;
+}
+.body-pinned-drawer .big-message.quiet {
+  padding-left: 300px;
+}
+.big-message.quiet {
+  max-width: 650px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.board-wrapper .big-message.quiet {
+  color: #ffffff;
+}
+.board-wrapper .big-message.quiet h1 {
+  font-weight: 400;
+}
+.board-wrapper .big-message.quiet p {
+  font-weight: 300;
+}
+.board-wrapper .big-message.quiet a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.board-wrapper .big-message.quiet a:hover {
+  text-decoration: underline;
+}
+/*
+----------- Board Header ----------*/
+
+.board-header-btn-name {
+  font-weight: 300;
+  font-size: 22px;
+}
+.board-header {
+  z-index: 2;
+  padding: 20px 44px 78px 48px;
+  box-shadow: 0px 30px 40px RGBA(0, 0, 0, 0.10);
+}
+.board-header-btn-name-with-org-logo {
+  padding-left: 16px;
+}
+.board-header-btn-text.u-text-underline {
+  text-decoration: none;
+}
+@media only screen and (max-width: 1200px) {
+  .board-header-btns.mod-right .board-header-btn-text, .board-header-btns.mod-left .board-header-btn-text, .board-header-btn-org-name .board-header-btn-text {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1500px) {
+  .body-pinned-drawer .board-header-btn-text, .body-pinned-drawer .board-header-btns.mod-left .board-header-btn-text, .body-pinned-drawer .board-header-btn-org-name .board-header-btn-text {
+    display: none;
+  }
+}
+/*
+----------- List Styles ----------*/
+
+#board:first-child {
+  padding-left: 40px;
+}
+#board:last-child {
+  padding-right: 40px;
+}
+.list-wrapper.mod-add {
+  padding: 10px;
+}
+.list-wrapper.mod-add.is-idle {
+  padding: 4px;
+}
+.list-wrapper.mod-add .list-name-input {
+  margin-bottom: 12px;
+  border: none;
+  box-shadow: none;
+}
+.list-wrapper {
+  margin-left: 15px;
+  width: 300px;
+  height: calc(100% - 24px);
+}
+.list-name-input {
+  background: #fff !important;
+}
+.list {
+  background: #E6EAEC;
+}
+.list-header-name {
+  text-transform: uppercase;
+  color: #687B88;
+  font-weight: 400 !important;
+  letter-spacing: 0.3px;
+  max-height: 38px;
+}
+textarea.mod-list-name.is-editing {
+  text-transform: none;
+  max-height: 100%;
+  z-index: 99;
+}
+.list-header {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+.list-header.is-menu-shown,
+.list-header.is-subscribe-shown {
+  padding-right: 8px;
+  padding-left: 34px;
+}
+.list-header-target {
+  z-index: 1;
+  margin: 15px 60px 20px 34px;
+}
+.list-card-title {
+  font-size: 14px;
+}
+.quick-card-editor-card textarea {
+  box-shadow: none !important;
+}
+.card-composer textarea {
+  box-shadow: none !important;
+  margin-top: 0;
+}
+.card-composer .list-card {
+  box-shadow: 0px 0px 20px 1px RGBA(24, 132, 193, 0.3);
+}
+.list-card.placeholder {
+  box-shadow: none;
+  background: #CDD0D2;
+}
+.open-card-composer {
+  visibility: hidden;
+  padding: 5px 10px;
+}
+.open-card-composer::before {
+  content: '+';
+  visibility: visible;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 300;
+  display: block;
+  position: absolute;
+  color: #0079BF;
+  border-radius: 100px;
+  background: #fff;
+  padding: 14px 16px;
+  top: 7px;
+  left: 14px;
+  box-shadow: 0px 6px 10px RGBA(0, 0, 60, 0.20);
+}
+.open-card-composer:hover::before {
+  padding-right: 120px;
+  box-shadow: 0px 5px 30px RGBA(32, 174, 255, 0.50);
+}
+.open-card-composer:hover::after {
+  content: 'Add a card...';
+  visibility: visible;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  position: absolute;
+  color: #0079BF;
+  top: 21px;
+  left: 60px;
+  border-radius: 100px;
+}
+.card-composer {
+  margin-bottom: 4px;
+}
+.js-list-subscribe:hover .icon-check {
+  color: #999 !important;
+}
+/*
+----------- Calendar Fixes ----------*/
+
+.calendar-day .list-card {
+  margin: 0 2px 4px;
+}
+.calendar-day .list-card-details {
+  padding: 4px 6px;
+}
+.calendar-day .list-card-labels {
+  margin: -4px 0 0;
+}
+.calendar-day .list-card-title {
+  margin: 0;
+  font-size: 12px;
+  line-height: 14px;
+}
+/*
+----------- List Dropdown Menu ----------*/
+
+.list-header-extras {
+  left: 4px;
+  right: 4px;
+  top: 11px;
+}
+.list-header-extras-subscribe {
+  float: right;
+}
+.list-header-extras .icon-overflow-menu-horizontal {
+  font-size: 14pt;
+}
+.list-header-extras-menu {
+  padding: 4px 4px 2px;
+}
+/*
+----------- Board Menu (Right Side) ----------*/
+
+@media only screen and (max-width: 1050px) {
+  .board-menu {
+    height: calc(100% - 60px);
+    top: 50px;
+    right: 36px;
+    border-radius: 6px;
+  }
+}
+@media only screen and (max-width: 1210px) {
+  .body-pinned-drawer .board-menu {
+    height: calc(100% - 60px);
+    top: 50px;
+    right: 36px;
+    border-radius: 6px;
+  }
+}
+.board-wrapper.is-show-menu .board-main-content {
+  margin-right: 0;
+}
+.board-wrapper.is-show-menu .board-header-btns.mod-right {
+  visibility: hidden;
+}
+.board-wrapper.is-show-menu .board-header-btns.mod-right {
+  visibility: visible;
+  right: 303px;
+}
+.board-wrapper.is-show-menu .calendar-wrapper {
+  right: 348px;
+}
+.board-menu {
+  background: RGBA(6, 49, 73, 0.93);
+  box-shadow: none !important;
+  color: #ffffff;
+  margin-top: -55px;
+}
+.board-menu-navigation-item-link {
+  color: #ffffff;
+  font-weight: 300;
+}
+.board-menu-section-header {
+  color: #ffffff;
+}
+.board-menu-section-header.js-open-activity {
+  display: none;
+}
+.board-menu-member-section .member {
+  margin: 5px 5px;
+}
+.board-menu-member-section {
+  margin-bottom: 18px;
+}
+.board-menu .icon-sm {
+  color: #939C9F;
+}
+.board-menu-header a:hover {
+  color: #ffffff;
+}
+.board-menu-content .quiet,
+.board-menu-content .quiet-button,
+.js-filter-search-results .mod-quiet,
+.js-filter-search-results .label-list-item-link.js-toggle-label-filter,
+.js-filter-search-results .name.js-select-member,
+.js-filter-search-results .js-due-filter,
+.archived-list-card .js-reopen,
+.archived-list-card .js-delete {
+  color: #C6D2D7;
+  font-weight: 300;
+}
+.board-menu-content a.known-service-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+.board-menu-content a.known-service-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.archive-content .empty-list {
+  background: none;
+  border: none;
+  color: #939C9F;
+}
+.archive-controls-switch:hover {
+  background: #0079BF;
+  color: #fff !important;
+}
+.board-menu-content .archive-list .item-name {
+  max-width: 175px;
+  padding-right: 0;
+}
+.board-menu-content-frame .disabled:hover .sub-name {
+  background: none;
+}
+.board-menu-content-frame li>a:hover,
+.board-menu-content-frame li>a:hover .icon-check {
+  color: #111;
+}
+.board-menu-content-frame li>a.js-change-org:hover,
+.board-menu-content-frame li>a.js-toggle-covers:hover,
+.board-menu-content-frame li>a.js-change-comments:hover,
+.board-menu-content-frame li>a.js-change-add-members:hover {
+  color: #111 !important;
+}
+.board-menu-content-frame .js-filter-search-results li>a:hover,
+.board-menu-content-frame .js-filter-search-results li>a:hover .icon-check {
+  color: #fff !important;
+}
+.board-menu-content .quiet-button:hover {
+  color: #111;
+}
+.js-filter-search-results .name.js-select-member:hover,
+.archived-list-card .quiet a:not(.disabled):hover,
+.board-menu-content-frame .pop-over-list li>a:hover {
+  color: #fff;
+}
+.js-filter-search-results .js-clear-all:hover {
+  color: #111 !important;
+}
+.board-wrapper.is-show-menu #board:last-child {
+  padding-right: 344px;
+}
+.board-menu-content-frame .pop-over-list li>a.disabled,
+.board-menu-content-frame .pop-over-list li>a,
+.board-menu-content-frame .pop-over-list li>a.disabled .sub-name {
+  color: #939C9F !important;
+}
+.board-menu-content-frame .archived-list-card .list-card {
+  border: 1px solid #5D737F;
+}
+.board-menu-content-frame .archived-list-card .list-card .list-card-cover {
+  border-radius: 2px 2px 0 0;
+}
+.power-up-item {
+  border-bottom: none;
+}
+.power-up-item-details-header {
+  color: #C6D2D7;
+  font-weight: 400;
+}
+.power-up-item-details-header:hover,
+.power-up-item-details-header:hover .power-up-item-details-info-icon,
+.power-up-item-enabled-icon:before {
+  color: #fff;
+}
+.archive-controls-search input {
+  margin-top: 0;
+}
+.power-ups-assign-to-team-list-item-member-count {
+  color: #C6D2D7;
+}
+.power-ups-assign-to-team-list,
+.power-ups-assign-to-team-list-item {
+  border: none;
+}
+.power-ups-assign-to-team-list-item-name {
+  font-weight: 400;
+}
+.power-ups-assign-to-team-create {
+  text-decoration: none;
+}
+.power-ups-assign-to-team-create-content:hover,
+.power-ups-assign-to-team-list-item-content:hover,
+.power-ups-assign-to-team-list-item-content:hover .power-ups-assign-to-team-list-item-member-count {
+  color: #000 !important;
+}
+/*
+----------- Board Menu Activity Feed Styling ----------*/
+
+.js-menu-action-list:before {
+  height: 80%;
+}
+.js-menu-action-list {
+  margin-top: -20px;
+}
+.board-menu-member-section-header {
+  color: #A0AAAF;
+}
+.board-menu-content-frame .js-menu-action-list .phenom-desc a,
+.phenom-list.js-list-activity .phenom-desc a {
+  color: #C6D2D7;
+}
+.board-menu-content-frame .js-menu-action-list .phenom-desc a:hover {
+  color: #ffffff;
+}
+.board-menu-content-frame .phenom {
+  color: #A0AAAF;
+}
+.board-menu-content-frame .atMention.me {
+  color: #43B6FC;
+}
+.board-menu-content-frame .atMention {
+  color: #C6D2D7;
+}
+.board-menu-content-frame .phenom-meta a.date,
+.board-menu-content-frame .phenom-meta.quiet {
+  color: #B8E78A;
+}
+.board-menu-content-frame .phenom-meta a.date:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.board-menu-content-frame .attachment-image-preview {
+  border: 1px solid RGBA(160, 170, 175, 0.20);
+}
+.board-menu-content-frame span.inline-member {
+  color: #ffffff;
+}
+.board-menu-content-frame a.action-card,
+.board-menu-content-frame a.js-open-attachment-viewer {
+  color: #C6D2D7;
+}
+.board-menu-content-frame .action-comment {
+  background: RGBA(3, 26, 39, 0.30);
+}
+.board-menu-content-frame .js-expand-comment {
+  height: 60px;
+  margin-top: -20px;
+  background: linear-gradient(to bottom, RGBA(6, 51, 77, 0), RGBA(6, 51, 77, 1));
+}
+.segmented-control {
+  border-bottom: none;
+}
+.segmented-control-item {
+  color: #939C9F;
+}
+/*
+----------- Boards Navigation Menu (Left Side) ----------*/
+
+.boards-drawer {
+  background: RGBA(6, 49, 73, 0.93);
+  box-shadow: none !important;
+  left: 41px;
+  top: 65px;
+}
+.boards-drawer-header {
+  background: none;
+  text-align: center;
+  color: #ffffff;
+}
+.boards-drawer .dark-hover:hover .icon-business-class {
+  color: #fff !important;
+}
+.boards-drawer.is-shown {
+  margin-top: -15px;
+  border-radius: 6px;
+}
+.boards-drawer-pinned {
+  border-radius: 0px !important;
+}
+.body-pinned-drawer #board:first-child {
+  padding-left: 314px;
+}
+.body-pinned-drawer .calendar-wrapper {
+  left: 289px;
+}
+.body-pinned-drawer .header-boards {
+  display: none;
+}
+.boards-drawer.is-shown.boards-drawer-pinned {
+  background: RGBA(6, 49, 73, 0.93);
+  left: 0;
+  top: 0;
+}
+.compact-board-tile-link-thumbnail {
+  width: 6px;
+}
+.compact-board-tile.selected .compact-board-tile-link-thumbnail {
+  width: 10px;
+}
+.compact-board-tile.selected .compact-board-tile-link-text {
+  padding-left: 6px;
+}
+.compact-board-tile-wrapper {
+  background: RGBA(3, 26, 39, 0.30);
+}
+.compact-board-tile.selected .compact-board-tile-fade {
+  background: rgba(255, 255, 255, .2);
+}
+.compact-board-tile-link-text-name {
+  color: #C6D2D7;
+  font-weight: 400;
+}
+.compact-board-tile-link-text-sub-name {
+  color: #939C9F;
+}
+.compact-board-tile-fade {
+  background: none;
+}
+.compact-board-tile-background {
+  background: none !important;
+}
+.compact-board-tile.selected .compact-board-tile-link-options-star {
+  color: #fff;
+}
+.sidebar-section-header-title,
+.js-board-drawer-buttons .quiet-button,
+.js-board-drawer-boards .quiet-button {
+  color: #ffffff;
+}
+.js-board-drawer-buttons .quiet-button:hover,
+.js-board-drawer-boards .quiet-button:hover {
+  color: #111;
+}
+.compact-board-tile-link-text-name {
+  font-weight: 300;
+}
+.body-pinned-drawer #surface {
+  margin-left: 0;
+}
+.body-pinned-drawer #header,
+.body-pinned-drawer .board-header {
+  padding-left: 324px;
+}
+.board-drawer-content {
+  margin: 6px 1px 6px 6px;
+}
+.body-pinned-drawer .board-drawer-content {
+  margin: 33px 1px 6px 6px;
+}
+.js-board-drawer-boards {
+  margin-top: 36px;
+}
+.boards-drawer-header h3 {
+  padding-top: 17px;
+}
+.sidebar-section-header-title.mod-clickable {
+  text-decoration: none;
+}
+.js-board-drawer-buttons {
+  margin: 30px 0 15px;
+}
+.boards-drawer .quiet-button {
+  margin-top: 0;
+}

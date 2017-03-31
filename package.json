@@ -1,0 +1,7 @@
+{
+  "name": "franken-trello",
+  "version": "1.0.0",
+  "scripts": {
+    "concat-css": "cat css/* > build/frankentrello.userstyle"
+  }
+}

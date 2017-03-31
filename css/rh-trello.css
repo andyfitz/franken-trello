@@ -1,0 +1,51 @@
+@import url(http://overpass-30e2.kxcdn.com/overpass.css);
+
+body, button, html, input, select{font-family: overpass, sans-serif}
+.header-logo .header-logo-default{background-image:none !important}
+.board-header-btn .board-header-btn-text{font-weight:900; text-transform: uppercase;}
+
+#header, .body-board-view #header{background-color:#444;}
+
+*{border-radius:0 !important}
+.list-card{border-radius: 0 }
+
+.list{box-shadow: 0 .15em 1.5em rgba(0,0,0,0.15); border-radius: 0 ;}
+.list-wrapper.mod-add{border-radius: 0}
+
+.sidebar-section-header-title,
+.app-alert-item-button, .header-btn,
+body .list-card-labels .card-label{border-radius: 0; text-transform:uppercase; ;}
+
+
+.sidebar-section-header-title{font-weight:700; opacity:.5}
+.card-label{text-shadow:none;}
+.card-label-sky{background-color:#A3DBE8; color:#004153; text-shadow:none}
+
+
+
+[style="background-color: rgb(137, 96, 158);"],
+.card-label-purple{background-color:#6D40A2 !important;}
+
+
+body{
+background-image:linear-gradient(-45deg,transparent 0%,rgba(0,0,0,0.2) 22%,rgba(0,0,0,0.05) 22%, transparent 50%, rgba(0,0,0,0.05) 50%, transparent 60%, transparent 85%,rgba(0,0,0,0.1) 85%,transparent 100%)
+}
+
+
+
+
+h1.u-inline{text-transform: uppercase; font-weight:900; border: .2em solid; border-style: solid none; padding: .5em 0; }
+
+
+.card-label-green{background-color:#3f9c35;}
+.card-label-orange{background-color:#ec7a08;}
+.card-label-yellow{background-color:#F4C040;}
+.card-label-red{background-color:#c00}
+.card-label-blue{background-color:#0088ce !important}
+.card-label-lime{background-color:#92d400 !important; color:#004153}
+
+.header-btn-text{font-weight: 900; letter-spacing:.1em;}
+
+
+
+.header-btn-icon{display:none}
